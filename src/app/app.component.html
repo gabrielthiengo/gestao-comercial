@@ -3,6 +3,9 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <div style="height: 20px; width:20px; background-color:black;">
+    
+  </div>
 </nav>
 
     <!-- Sidebar -->
@@ -17,47 +20,58 @@
       <li class="nav-item">
           <a id="produto" class="nav-link" routerLink="#" >
             <i class="fas fa-fw fa-folder"></i>
-            <span>Produto</span>
+            <span>Cadastro</span>
           <div id="submenu" class="dropdown sidebar navbar-nav">
               <div class="dropdown-content"> 
-                  <li>
-                      <a id="ul-submenu" class="nav-link" routerLink="/categories">
-                      <span>Cadastrar</span>
+                  <li routerLink="/register">
+                      <a id="ul-submenu" class="nav-link">
+                      <span><a class="hifem">- </a>Novo Produto</span>
+                      </a>
+                  </li>
+                  <li routerLink="/register/new-product">
+                      <a id="ul-submenu2" class="nav-link">
+                        <span><a class="hifem">- </a>Adicionar Produto</span>
                       </a>
                   </li>
                   <li>
-                      <a id="ul-submenu2" class="nav-link" routerLink="/categories">
-                      <span>Listar</span>
-                      </a>
-                  </li>
+                    <a id="ul-submenu2" class="nav-link" routerLink="/register">
+                      <span><a class="hifem">- </a>Nova Venda</span>
+                    </a>
+                </li>
+                <li>
+                  <a id="ul-submenu2" class="nav-link" routerLink="/register">
+                    <span><a class="hifem">- </a>Vendedor</span>
+                  </a>
+              </li>
               </div>
           </div>
         </a>
         </li>
+
       <li class="nav-item">
-        <a id="vendas" class="nav-link" routerLink="#">
-          <i class="fas fa-fw fa-chart-area"></i>
-          <span>Vendas</span>
-          <div id="submenu2" class="dropdown sidebar navbar-nav">
-              <div class="dropdown-content"> 
-                  <li>
-                      <a id="ul-submenu3" class="nav-link" routerLink="/categories">
-                      <span>Nova Venda</span>
-                      </a>
-                  </li>
-                  <li>
-                      <a id="ul-submenu4" class="nav-link" routerLink="/categories">
-                      <span>Histórico de Vendas</span>
-                      </a>
-                  </li>
-              </div>
-          </div>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="representacao.html">
+        <a id="vendedor" class="nav-link" href="representacao.html">
           <i class="fas fa-fw fa-table"></i>
-          <span>Vendedor</span></a>
+          <span>Vendedor</span>
+          <div id="submenu-vendedor" class="dropdown sidebar navbar-nav">
+            <div class="dropdown-content"> 
+                <li>
+                    <a id="ul-submenu-vendedor" class="nav-link" routerLink="/categories">
+                    <span>Cadastrar</span>
+                    </a>
+                </li>
+                <li>
+                    <a id="ul-submenu-vendedor1" class="nav-link" routerLink="/categories">
+                    <span>Listar</span>
+                    </a>
+                </li>
+                <li>
+                  <a id="ul-submenu-vendedor2" class="nav-link" routerLink="/categories">
+                  <span>Ranking</span>
+                  </a>
+              </li>
+            </div>
+        </div>
+        </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="representacao.html">
@@ -68,4 +82,5 @@
 
     <div id="container">
     <router-outlet></router-outlet>
+    
 </div>
