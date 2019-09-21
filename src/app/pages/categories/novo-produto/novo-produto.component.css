@@ -20,6 +20,7 @@
     font-family: 'Open Sans', 'Sans-Serif';
     font-size: 15px;
     z-index: -1 !important;
+    margin-right: 10px;
 }
 #tableProdutos{
     border-radius: .25rem !important;
@@ -53,7 +54,48 @@
 }
 .border{
     height:auto;
-    width:100%;
     border: 1px;
     border-radius: 5px !important;
+    width: 100%;
+    margin-top: 15px !important;
+    padding-bottom: 35px !important;
+    padding-top:  20px !important;
+}
+#formCodigo{
+    margin-left: 20px;
+}
+#formName{
+    width: 47%;
+}
+#formModel{
+    margin-left: 10px;
+    width: 25%;
+}
+#formCollection{
+    margin-left: 10px;
+    margin-right: 5px;
+    width: 25.7%;
+}
+#formDescription{
+    margin-right: 5px;
+    width: 100%;
+}
+#formDtEntrada{
+    width: 20%;
+}
+#formQtd{
+    margin-left: 10px;
+    width: 15%;
+}
+#formCost{
+    margin-left: 10px;
+    width: 15%;
+}
+#formVlUnitary{
+    margin-left: 10px;
+    width: 15%;
+}
+#formVlTotal{
+    margin-left: 10px;
+    width: 15%;
 }

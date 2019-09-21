@@ -11,7 +11,9 @@ import { NovoProdutoComponent } from './novo-produto/novo-produto.component';
   declarations: [CategoryListComponent, CategoryFormComponent, NovoProdutoComponent],
   imports: [
     CommonModule,
-    CategoriesRoutingModule
+    CategoriesRoutingModule,
   ]
 })
-export class CategoriesModule { }
+export class CategoriesModule {
+ 
+ }

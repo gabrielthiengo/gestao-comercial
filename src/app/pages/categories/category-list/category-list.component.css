@@ -17,6 +17,7 @@
     font-family: 'Open Sans', 'Sans-Serif';
 }
 .form-row{
+    width: 100%;
     font-family: 'Open Sans', 'Sans-Serif';
     font-size: 15px;
     z-index: -1 !important;
@@ -51,9 +52,40 @@
 #btnSalvar:hover{
     box-shadow: 0px 2px 22px 2px rgba(0,0,0,0.4); 
 }
+
+#formCodigo{
+    width: 20%;
+    margin-left: 20px;
+}
+#formName{
+    width: 54%;
+    margin-left: 10px;
+}
+#formModel{
+    width: 20.8%;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#formDescription{
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#formCollection{
+    width: 15%;
+    margin-left: 20px !important;
+}
+#formVlUnitary{
+    width: 15%;
+    margin-left: 10px;
+    margin-right: 20px;
+}
 .border{
     height:auto;
-    width:100%;
     border: 1px;
     border-radius: 5px !important;
+    width: 100%;
+    margin-top: 15px !important;
+    padding-bottom: 35px !important;
+    padding-top:  20px !important;
 }

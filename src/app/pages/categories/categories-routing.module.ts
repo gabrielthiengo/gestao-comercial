@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CategoryListComponent } from "./category-list/category-list.component";
 import { CategoryFormComponent } from "./category-form/category-form.component";
 import { NovoProdutoComponent } from "./novo-produto/novo-produto.component";
+import { TextMaskModule } from 'angular2-text-mask';
 
 
 const routes: Routes = [
@@ -14,7 +15,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routes), TextMaskModule],
   exports: [RouterModule]
 })
-export class CategoriesRoutingModule { }
+export class CategoriesRoutingModule { 
+  
+}
