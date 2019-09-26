@@ -3,10 +3,14 @@
     width: 100%;
     padding: 20px;
     z-index: -1;
+    background: #EEF2F6;
 }
 .breadcrumb{
     margin-top: 50px;
     font-family: 'Open Sans', 'Sans-Serif';
+    background: white;
+    border: 1px solid #dee2e6!important;
+
 }
 .title{
     margin-left: 15px;
@@ -17,10 +21,10 @@
     font-family: 'Open Sans', 'Sans-Serif';
 }
 .form-row{
-    width: 100%;
     font-family: 'Open Sans', 'Sans-Serif';
     font-size: 15px;
     z-index: -1 !important;
+    margin-right: 0px;
 }
 #tableProdutos{
     border-radius: .25rem !important;
@@ -52,40 +56,102 @@
 #btnSalvar:hover{
     box-shadow: 0px 2px 22px 2px rgba(0,0,0,0.4); 
 }
-
-#formCodigo{
-    width: 20%;
-    margin-left: 20px;
-}
-#formName{
-    width: 54%;
-    margin-left: 10px;
-}
-#formModel{
-    width: 20.8%;
-    margin-left: 10px;
-    margin-right: 20px;
-}
-#formDescription{
-    width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-#formCollection{
-    width: 15%;
-    margin-left: 20px !important;
-}
-#formVlUnitary{
-    width: 15%;
-    margin-left: 10px;
-    margin-right: 20px;
-}
 .border{
     height:auto;
     border: 1px;
     border-radius: 5px !important;
     width: 100%;
-    margin-top: 15px !important;
-    padding-bottom: 35px !important;
+    padding-bottom: 20px !important;
     padding-top:  20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    background: white;
+
+}
+#codigoProduto{
+    width: 19%;
+}
+#formName{
+    margin-left: 1%;
+    width: 60%;
+}
+#formModel{
+    margin-left: 1%;
+    width: 49%;
+}
+#formCollection{
+    margin-left: 1%;
+    width: 49%;
+}
+#formDescription{
+    width: 49%;
+    height: auto;
+    margin-left: 1% !important;
+}
+#formDtEntrada{
+    margin-left: 1%;
+    width: 49%;
+}
+#formQtd{
+    margin-left: 1%;
+    width: 49%;
+}
+#formCost{
+    margin-left: 1%;
+    width: 49%;
+}
+#formVlUnitary{
+    margin-left: 1%;
+    width: 49%;
+}
+#formVlTotal{
+    margin-left: 1%;
+    width: 49%;
+}
+#formFornecedor{
+    margin-left: 1%;
+    width: 49%;
+}
+#formGrade{
+    margin-left: 1%;
+    width: 49%;
+}
+#formCEP{
+    margin-left: 1%;
+    width: 49%;
+}
+#formPontoReferencia{
+    margin-left: 1%;
+    width: 49%;
+}
+.left-side{
+    padding: 10px;
+    width: 49.5%;
+    height: auto;
+    border-radius: 5px !important;
+    border: 1px solid #dee2e6!important;
+
+}
+.right-side{    
+    width: 49.5%;
+    height: auto;
+    border-radius: 5px !important;
+    border: 1px solid #dee2e6!important;
+    margin-left: 1%;
+    padding: 10px;
+ 
+}
+
+.border2{
+    height:auto;
+    border: 1px;
+    border-radius: 5px !important;
+    width: 100%;
+}
+.side-left{
+    margin-left: 0px;
+    width: 100%;
+}
+#btnSalvar{
+    background-image: linear-gradient(to right, rgb(4, 99, 89),rgb(4, 119, 106), rgb(4, 126, 112)) !important;
 }

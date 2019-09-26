@@ -1,149 +1,92 @@
-<div id="bodyy">
-    <nav id="nav" class="mb-1">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a routerLink="/">Gestão Comercial</a></li>
-            <li class="breadcrumb-item active">Novo Produto</li>
-        </ol>
-    </nav>
-    <div class="border">
-        <form class="form-produto">
-            <div class="form-row ml-0">
-            <div id="formCodigo" class="form-group">
-                <label id="codigoProduto" class="label-form" for="inputCodigo">Código</label>
-                <input type="email" class="form-control" id="inputCodigo">
-            </div>
-            <div id="formName" class="form-group">
-                <label class="label-form" for="inputNome">Nome</label>
-                <input type="text" class="form-control" id="inputNome">
-            </div>
-            <div id="formModel" class="form-group">
-                <label class="label-form" for="inputModelo">Modelo</label>
-                <input type="text" class="form-control" id="inputModelo">
-            </div>
-            </div>
-            <div class="form-row ml-0">
-                <div id="formDescription" class="form-group">
-                    <label class="label-form" for="inputDescricao">Descrição</label>
-                    <input type="text" class="form-control" id="inputDescricao">
-                </div>
-            </div>
-            
-            <div class="form-row ml-0">
-                <div id="formCollection" class="form-group">
-                    <label class="label-form" for="inputColecao">Coleção</label>
-                    <input type="text" class="form-control " id="inputColecao">
-                </div>
-                <div id="formVlUnitary" class="form-group ">
-                    <label class="label-form" for="inputValorUnitario">Valor Unitário</label>
-                    <input type="text" class="form-control" id="inputValorUnitario">
-                </div>
-            </div>
-            <div class="col-md-12 pb-4">
-                <button id="btnSalvar" type="submit" outerLink="new" class="btn btn-success float-right">Salvar</button>
-            </div>
-        </form>
-    </div>
 
-   <div class="mt-3">
-    <div class="row mb-2">
-        <div class="title">
-            <h2 class="border-left pl-2">
-                Estoque:
-            </h2>
+<div id="bodyy">
+        <nav id="nav" class="mb-1">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a routerLink="/">Gestão Comercial</a></li>
+                <li class="breadcrumb-item active">Cadastro</li>
+                <li class="breadcrumb-item active">Cliente</li>
+            </ol>
+        </nav>
+        <div class="border">
+
+            <form id="formCodigo" class="form-produto">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label id="codigoProduto" class="label-form">Código</label>
+                        <input type="email" class="form-control" id="inputCodigo">
+                    </div>
+                    <div id="formName" class="form-group">
+                        <label class="label-form" for="inputNome">Nome</label>
+                        <input type="text" class="form-control" id="inputNome">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="left-side mb-2 mt-2">
+                        <div class="form-row">
+                            <div id="formModel"  class="form-group">
+                                <label class="label-form" for="inputModelo">RG</label>
+                                <input type="text" class="form-control" id="inputModelo">
+                            </div>
+                            <div id="formCollection" class="form-group">
+                                <label class="label-form" for="inputColecao">CPF</label>
+                                <input type="text" class="form-control " id="inputColecao">
+                            </div>
+                            <div id="formFornecedor" class="form-group">
+                                <label class="label-form" for="inputFornecedor">Data de Nascimento</label>
+                                <input type="text" class="form-control " id="inputFornecedor">
+                            </div>
+                            <div id="formGrade" class="form-group">
+                                <label class="label-form" for="inputGrade">Nacionalidade</label>
+                                <input type="text" class="form-control " id="inputGrade">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div id="formDtEntrada" class="form-group">
+                                <label class="label-form" for="inputDtEntrada">Telefone Fixo</label>
+                                <input type="text" class="form-control " id="inputDataEntrada">
+                            </div>
+                            <div id="formDescription" class="form-group">
+                                <label class="label-form" for="inputDescription">Celular</label>
+                                <input type="text" class="form-control " id="inputDescription">
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="right-side mb-2 mt-2">
+                        <div class="form-row">
+                            <div id="formQtd" class="form-group">
+                                <label class="label-form" for="inputQuantidade">Rua</label>
+                                <input type="text" class="form-control" id="inputQuantidade">
+                            </div>
+                            <div id="formCost"  class="form-group">
+                                <label class="label-form" for="inputCusto">Bairro</label>
+                                <input type="text" class="form-control" id="inputCusto">
+                            </div>
+                            <div id="formVlUnitary" class="form-group">
+                                <label class="label-form" for="inputValorUnitario">Número</label>
+                                <input type="text" class="form-control" id="inputValorUnitario">
+                            </div>
+                            <div id="formVlTotal" class="form-group">
+                                <label class="label-form" for="formVlTotal">Complemento</label>
+                                <input type="text" class="form-control" id="formValorTotal">
+                            </div>
+                            <div id="formCEP" class="form-group">
+                                <label class="label-form" for="formVlTotal">CEP</label>
+                                <input type="text" class="form-control" id="formValorTotal">
+                            </div>
+                            <div id="formPontoReferencia" class="form-group">
+                                <label class="label-form" for="formVlTotal">Referência</label>
+                                <input type="text" class="form-control" id="formValorTotal">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3 mb-3 pb-4">
+                    <button id="btnSalvar" type="submit" outerLink="new" class="btn btn-success float-right">Salvar</button>
+                </div>
+
+            </form>
+           
         </div>
-    </div>
-    
-    <table class="table table-hover">
-        <thead>
-            <tr id="tableProdutos" class="bg-primary text-light">
-                <th class="th-row">Código</th>
-                <th class="th-row">Nome</th>
-                <th class="th-row">Coleção</th>
-                <th class="th-row">Quantidade</th>
-                <th id="valor-unitario" class="th-row"><a class="float-right">Valor</a></th>
-                <th id="acoes" class="th-row"><a class="center">Ações</a></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>
-                    <strong>FLO0242019VR</strong><br>
-                </td>
-                <td>
-                    <strong>Bata Borboleta</strong><br>
-                    <small>Bata manga curta com renda</small>
-                </td>
-                <td>
-                    <strong>Primavera</strong><br>
-                </td>
-                <td>
-                    <strong>45</strong><br>
-                    <small></small>
-                </td>
-                <td>
-                    <strong><a class="float-right">R$ 119,90</a></strong><br>
-                    <small>Total: R$5.395,50</small>
-                </td>
-                <td>
-                    <div id="botoes">
-                        <a [routerLink]="['12', 'edit']" class="btn btn-outline-info btn-sm mr-2">Editar</a>
-                        <button (click)="alert('excluir')" class="btn btn-outline-danger btn-sm">Excluir</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <strong>FLO0252019VR</strong><br>
-                </td>
-                <td>
-                    <strong>Vestido Longo</strong><br>
-                    <small>Vestido Longo com Renda</small>
-                </td>
-                <td>
-                    <strong>Primavera</strong><br>
-                </td>
-                <td>
-                    <strong>22</strong><br>
-                    <small></small>
-                </td>
-                <td>
-                    <strong><a class="float-right">R$ 109,90</a></strong><br>
-                    <small>Total: R$2.417,80</small>
-                </td>
-                <td>
-                    <div id="botoes">
-                        <a [routerLink]="['12', 'edit']" class="btn btn-outline-info btn-sm mr-2">Editar</a>
-                        <button (click)="alert('excluir')" class="btn btn-outline-danger btn-sm">Excluir</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <strong>FLO0262019VR</strong><br>
-                </td>
-                <td>
-                    <strong>Regata Gota</strong><br>
-                    <small>Regata sem manga com gota</small>
-                </td>
-                <td>
-                    <strong>Primavera</strong><br>
-                </td>
-                <td>
-                    <strong>60</strong><br>
-                    <small></small>
-                </td>
-                <td>
-                    <strong><a class="float-right">R$ 69,90</a></strong><br>
-                    <small>Total: R$4.194,00</small>
-                </td>
-                <td>
-                    <div id="botoes">
-                        <a [routerLink]="['12', 'edit']" class="btn btn-outline-info btn-sm mr-2">Editar</a>
-                        <button (click)="alert('excluir')" class="btn btn-outline-danger btn-sm">Excluir</button>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-   </div>
-</div>
